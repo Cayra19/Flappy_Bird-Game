@@ -27,7 +27,7 @@ gameOver = 'gallery/images/gm1.png'
 
 # Loading images
 def load_images():
-    game_images['title'] = pygame.transform.scale(pygame.image.load(title), (100, 140))
+    game_images['title'] = pygame.transform.scale(pygame.image.load(title), (100, 200))
 
     game_images['base'] = pygame.transform.scale(pygame.image.load(base), (screenWidth * 2, 200))
 
@@ -61,7 +61,7 @@ def load_images():
 
 def startGame():
     playerX = int(screenWidth * 0.4)
-    playerY = int((screenHeight - game_images['player'].get_height()) * 0.5)
+    playerY = int((screenHeight - game_images['player'].get_height()) * 0.7)
     titleX = int((screenWidth - game_images['title'].get_width()) * 0.5)
     titleY = int(screenHeight * 0.2)
     baseX = 0
